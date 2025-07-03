@@ -128,7 +128,7 @@ footer {
   border-top: 2px dashed #ffb6b9;
 }
 
-/* Responsif */
+/* RESPONSIVE NAVBAR */
 @media (max-width: 768px) {
   #menu-toggle {
     display: block;

@@ -35,6 +35,18 @@ p, li {
   font-size: 1.1rem;
 }
 
+#menu-toggle {
+  display: none;
+  background-color: #ffb6b9;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
 nav {
   background-color: #ffe0f0;
   padding: 1rem;
@@ -42,6 +54,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  text-align: center;
 }
 
 nav ul {
@@ -117,9 +130,20 @@ footer {
 
 /* Responsif */
 @media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+
   nav ul {
+    display: none;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+  }
+
+  nav ul.show {
+    display: flex;
   }
 
   nav ul li {
